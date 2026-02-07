@@ -1,6 +1,6 @@
 # Rashq Online Store (Next.js Frontend)
 
-![Rashq Logo](public/rashq.jpg)
+![Rashq Logo](public/rashq-logo.jpg)
 
 Rashq is a modern clothing brand that blends Middle Eastern heritage with contemporary fashion. This online store is the brand’s digital storefront, built with **Next.js** and **React**, offering a fast, responsive, and seamless shopping experience.
 

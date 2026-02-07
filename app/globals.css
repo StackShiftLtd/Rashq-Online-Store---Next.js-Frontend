@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* RASHQ Luxury Color Palette */
+    --background: 0 0% 98%;
+    --foreground: 140 30% 18%;
+    --card: 0 0% 100%;
+    --card-foreground: 140 30% 18%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 30% 18%;
+    
+    /* Primary: Deep Emerald Green */
+    --primary: 140 40% 28%;
+    --primary-foreground: 0 0% 98%;
+    
+    /* Secondary: Matte Gold */
+    --secondary: 45 75% 55%;
+    --secondary-foreground: 140 40% 28%;
+    
+    /* Muted: Cream/Ivory */
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 45%;
+    
+    /* Accent: Flame Gradient (Gold to Amber) */
+    --accent: 35 85% 60%;
+    --accent-foreground: 140 40% 28%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 140 15% 90%;
+    --input: 140 15% 92%;
+    --ring: 140 40% 28%;
+    
+    --chart-1: 140 40% 35%;
+    --chart-2: 45 75% 55%;
+    --chart-3: 35 85% 60%;
+    --chart-4: 0 0% 85%;
+    --chart-5: 140 30% 25%;
+    
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 140 30% 25%;
+    --sidebar-primary: 140 40% 28%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 45 75% 55%;
+    --sidebar-accent-foreground: 140 40% 28%;
+    --sidebar-border: 140 15% 90%;
+    --sidebar-ring: 140 40% 28%;
+  }
+  
+  .dark {
+    --background: 140 30% 12%;
+    --foreground: 0 0% 96%;
+    --card: 140 30% 16%;
+    --card-foreground: 0 0% 96%;
+    --popover: 140 30% 16%;
+    --popover-foreground: 0 0% 96%;
+    --primary: 45 75% 55%;
+    --primary-foreground: 140 30% 12%;
+    --secondary: 140 40% 28%;
+    --secondary-foreground: 0 0% 96%;
+    --muted: 140 30% 25%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 35 85% 60%;
+    --accent-foreground: 140 30% 12%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 140 30% 20%;
+    --input: 140 30% 20%;
+    --ring: 45 75% 55%;
+    --chart-1: 45 75% 55%;
+    --chart-2: 35 85% 60%;
+    --chart-3: 140 40% 35%;
+    --chart-4: 0 0% 40%;
+    --chart-5: 140 30% 50%;
+    --sidebar-background: 140 30% 14%;
+    --sidebar-foreground: 0 0% 96%;
+    --sidebar-primary: 45 75% 55%;
+    --sidebar-primary-foreground: 140 30% 12%;
+    --sidebar-accent: 140 40% 28%;
+    --sidebar-accent-foreground: 0 0% 96%;
+    --sidebar-border: 140 30% 20%;
+    --sidebar-ring: 45 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Inter', sans-serif;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+  }
+  
+  .animate-fade-in-delay-1 {
+    animation: fade-in 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+  }
+  
+  .animate-fade-in-delay-2 {
+    animation: fade-in 0.8s ease-out 0.4s forwards;
+    opacity: 0;
+  }
+  
+  .animate-fade-in-delay-3 {
+    animation: fade-in 0.8s ease-out 0.6s forwards;
+    opacity: 0;
+  }
+  
+  .animate-fade-in-delay-4 {
+    animation: fade-in 0.8s ease-out 0.8s forwards;
+    opacity: 0;
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+  }
+  
+  .animate-slide-in-left {
+    animation: slide-in-left 0.8s ease-out forwards;
+  }
+}

@@ -6,7 +6,8 @@ Rashq is a modern clothing brand that blends Middle Eastern heritage with contem
 
 ## Live Demo
 
-[https://rashq-online-store-nextjs-frontend.vercel.app](#)
+[Live Demo](https://rashq-online-store-nextjs-frontend.vercel.app)
+
 
 ---
 
